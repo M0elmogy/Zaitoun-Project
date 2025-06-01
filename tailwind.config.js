@@ -26,5 +26,11 @@ module.exports = {
     },
   },
   plugins: [],
+  darkMode: 'class', // مهم جداً
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
 }
 

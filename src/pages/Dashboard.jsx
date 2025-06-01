@@ -64,6 +64,10 @@ export default function Dashboard({ products, setProducts }) {
       </form>
 
       <ul className="divide-y divide-gray-200">
+        {products.length === 0 && (
+          <p className="text-center text-gray-500 py-10">لا توجد منتجات حتى الآن</p>
+        )}
+
         {products.map((product) => (
           <ProductItem
             key={product.id}
@@ -72,9 +76,6 @@ export default function Dashboard({ products, setProducts }) {
             updateProduct={updateProduct}
           />
         ))}
-        {products.length === 0 && (
-          <p className="text-center text-gray-500 py-10">لا توجد منتجات حتى الآن</p>
-        )}
       </ul>
     </div>
   );

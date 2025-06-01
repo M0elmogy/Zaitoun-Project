@@ -8,12 +8,12 @@ import img3 from "../components/img/img3.jpg";
 export default function About() {
   return (
     <div
-      className="min-h-screen flex items-center justify-center bg-green-50"
+      className="min-h-screen flex items-center justify-center bg-green-50 dark:bg-black"
       style={{ padding: "2rem" }}
     >
       <section
         id="about-images"
-        className="about-section max-w-6xl w-full border border-green-300 rounded-3xl shadow-lg p-10 bg-gradient-to-b from-green-50 to-green-150"
+        className="about-section max-w-6xl w-full border border-green-300 dark:border-green-700 rounded-3xl shadow-lg p-10 bg-gradient-to-b from-green-50 to-green-150 dark:from-black dark:to-gray-900"
       >
         <div className="about-content flex flex-col md:flex-row gap-10">
           {/* الصور */}
@@ -48,25 +48,25 @@ export default function About() {
           </div>
 
           {/* النص */}
-          <div className="about-text flex-1 text-green-900 space-y-6 text-lg leading-relaxed">
-            <p className="font-semibold text-green-800">
-              نحن عائلة <span className="text-green-700">"زيتون"</span> نعمل في زراعة أشجار الزيتون وإنتاج زيت الزيتون منذ أكثر من 50 عاماً. نحرص على تقديم زيت زيتون بجودة عالية من أشجارنا المعمرة في شمال سيناء.
+          <div className="about-text flex-1 space-y-6 text-lg leading-relaxed text-green-900 dark:text-green-400">
+            <p className="font-semibold text-green-800 dark:text-green-300">
+              نحن عائلة <span className="text-green-700 dark:text-green-200">"زيتون"</span> نعمل في زراعة أشجار الزيتون وإنتاج زيت الزيتون منذ أكثر من 50 عاماً. نحرص على تقديم زيت زيتون بجودة عالية من أشجارنا المعمرة في شمال سيناء.
             </p>
-            <p className="text-green-700">
+            <p className="text-green-700 dark:text-green-300">
               نتبع الطرق التقليدية في العصر على البارد للحفاظ على القيمة الغذائية والطعم المميز لزيت الزيتون.
             </p>
-            <ul className="features-list list-disc list-inside space-y-3 text-green-800 font-medium">
-              <li className="flex items-center gap-3">
-                <FaCheck className="text-green-600" /> زيت طبيعي 100%
+            <ul className="features-list list-disc list-inside space-y-3 font-medium">
+              <li className="flex items-center gap-3 text-green-800 dark:text-green-300">
+                <FaCheck className="text-green-600 dark:text-green-400" /> زيت طبيعي 100%
               </li>
-              <li className="flex items-center gap-3">
-                <FaCheck className="text-green-600" /> معصور على البارد
+              <li className="flex items-center gap-3 text-green-800 dark:text-green-300">
+                <FaCheck className="text-green-600 dark:text-green-400" /> معصور على البارد
               </li>
-              <li className="flex items-center gap-3">
-                <FaCheck className="text-green-600" /> خالي من أي إضافات
+              <li className="flex items-center gap-3 text-green-800 dark:text-green-300">
+                <FaCheck className="text-green-600 dark:text-green-400" /> خالي من أي إضافات
               </li>
-              <li className="flex items-center gap-3">
-                <FaCheck className="text-green-600" /> تغليف خاص لحماية الجودة
+              <li className="flex items-center gap-3 text-green-800 dark:text-green-300">
+                <FaCheck className="text-green-600 dark:text-green-400" /> تغليف خاص لحماية الجودة
               </li>
             </ul>
           </div>
